@@ -10,12 +10,9 @@ const port = process.env.PORT || 8000;
 
 MongoClient.connect(
         process.env.ECOMMERCE_DEMO_DB_URI, {
-
             minPoolSize: 25,
             maxPoolSize: 50,
-            wtimeoutMS: 2500,
-
-
+            wtimeoutMS: 2500
         }
     )
     .catch(e => {
